@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: var(--space-6);
+}
+
+.code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  gap: var(--space-4);
+  position: relative;
+}
+
+.stepLine {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin: 4px 0;
+  min-height: 20px;
+}
+
+.stepLineDone {
+  background: var(--accent);
+}
+
+.stepMarkerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-sunken);
+  color: var(--text-tertiary);
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.markerDone {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+.markerActive {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.stepBody {
+  flex: 1;
+  padding-bottom: var(--space-6);
+}
+
+.stepTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepDetail {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.hashCard {
+  margin-top: var(--space-6);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  color: var(--accent-contrast);
+}
+
+.hashValue {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  word-break: break-all;
+  opacity: 0.9;
+  margin-top: 6px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+}

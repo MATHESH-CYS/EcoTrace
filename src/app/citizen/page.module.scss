@@ -1,0 +1,99 @@
+.hero {
+  padding: var(--space-2) 0 var(--space-5);
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+@media (max-width: 380px) {
+  .categoryGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.categoryTile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: var(--space-3) 4px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: transform 120ms ease, border-color 120ms ease;
+}
+.categoryTile:active { transform: scale(0.96); }
+
+.categoryIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.section {
+  margin-top: var(--space-8);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.activeBanner {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: var(--accent-contrast);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-md);
+}
+
+.quickLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.quickLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+}
+
+.pickupRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+}
+
+.pickupRow + .pickupRow {
+  border-top: 1px solid var(--border);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  color: var(--text-secondary);
+}

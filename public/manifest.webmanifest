@@ -1,0 +1,12 @@
+{
+  "name": "EcoTrace",
+  "short_name": "EcoTrace",
+  "description": "From doorstep to responsible recycling — every device has a verifiable journey.",
+  "start_url": "/sign-in",
+  "display": "standalone",
+  "background_color": "#f5f5f2",
+  "theme_color": "#1a7a52",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

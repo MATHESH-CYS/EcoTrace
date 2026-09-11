@@ -1,0 +1,142 @@
+.page {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--bg);
+}
+
+@media (min-width: 900px) {
+  .page {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-12);
+  background: linear-gradient(160deg, var(--accent-strong), var(--accent) 60%, #0f5c3c);
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .hero { display: flex; }
+}
+
+.heroMark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.heroBadge {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 420px;
+}
+
+.heroTag {
+  font-size: 16px;
+  opacity: 0.85;
+  max-width: 380px;
+  margin-top: var(--space-4);
+}
+
+.heroSteps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.heroStep {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.formSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+}
+
+.formCard {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.mobileMark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.errorBanner {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: 13px;
+}
+
+.hugePortalCard {
+  background: var(--bg-elevated);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-5);
+  box-shadow: 0 4px 20px var(--accent-soft);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 84px;
+}
+
+.hugePortalTitle {
+  font-size: clamp(22px, 3.5vw, 32px);
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
